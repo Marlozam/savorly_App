@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userFeedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_feed"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bestQD"
+            android:layout_width="382dp"
+            android:layout_height="205dp"
+            android:layout_marginTop="2dp"
+            android:background="#8C9EFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userImage1"
+            app:srcCompat="@drawable/bestqualitydaughter" />
+
+        <TextView
+            android:id="@+id/userName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginBottom="10dp"
+            android:text="SanAntonioFoodie"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bestQD"
+            app:layout_constraintStart_toEndOf="@+id/userImage1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/userImage1"
+            android:layout_width="44dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/heart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bestQD"
+            app:srcCompat="@drawable/hear_meg" />
+
+        <ImageButton
+            android:id="@+id/commentBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/heart1"
+            app:layout_constraintTop_toBottomOf="@+id/bestQD"
+            app:srcCompat="@drawable/comment2" />
+
+        <ImageButton
+            android:id="@+id/save1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/commentBtn1"
+            app:layout_constraintTop_toBottomOf="@+id/bestQD"
+            app:srcCompat="@drawable/save2" />
+
+        <TextView
+            android:id="@+id/comment1"
+            android:layout_width="378dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="55dp"
+            android:text="I had an absolutely amazing time dining at Best Quality Daughter! The ambiance was perfect, and the cashew chicken was nothing short of incredible! Highly recommend this spot! #BestQualityDaughter #SanAntonioFoodie"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bestQD" />
+
+        <ImageView
+            android:id="@+id/backeryL"
+            android:layout_width="368dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user2"
+            app:srcCompat="@drawable/backery_l" />
+
+        <ImageView
+            android:id="@+id/user2"
+            android:layout_width="42dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/userName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:text="BaguetteLover101"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/user2"
+            app:layout_constraintTop_toBottomOf="@+id/comment1" />
+
+        <ImageButton
+            android:id="@+id/likeButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backeryL"
+            app:srcCompat="@drawable/hear_meg" />
+
+        <ImageButton
+            android:id="@+id/commentBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/likeButton2"
+            app:layout_constraintTop_toBottomOf="@+id/backeryL"
+            app:srcCompat="@drawable/comment2" />
+
+        <ImageButton
+            android:id="@+id/save2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/commentBtn2"
+            app:layout_constraintTop_toBottomOf="@+id/backeryL"
+            app:srcCompat="@drawable/save2" />
+
+        <TextView
+            android:id="@+id/comment2"
+            android:layout_width="368dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="109dp"
+            android:text="I had the cutest, freshly baked strawberry Pop-Tart and some of the best coffee at Bakery Lorraine at the Pearl! Such a charming spot to catch up with a friend. #BakeryLorraine #PearlBrewery #BestCoffeeInSanAntonio"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backeryL" />
+
+        <Button
+            android:id="@+id/followBtn"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="1dp"
+            android:text="Follow"
+            app:layout_constraintBottom_toTopOf="@+id/backeryL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:text="SanAntonioFoodie"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/userImage1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
